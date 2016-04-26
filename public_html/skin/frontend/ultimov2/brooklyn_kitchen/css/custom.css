@@ -544,6 +544,9 @@ a.link-registry:hover { background-color:#fff; /*opacity:1; filter:alpha(opacity
 }
 
 /********* header ***********/
+.header .logo {
+  max-width: 200px;
+}
 #mini-cart .dropdown-menu, #mini-cart.open .dropdown-toggle.cover > div {
   background: #fff;
 }
@@ -565,4 +568,171 @@ a.link-registry:hover { background-color:#fff; /*opacity:1; filter:alpha(opacity
 }
 .show-separators .links > li > a {
   background-image: none;
+}
+@media only screen and (min-width: 1280px) {
+  .container {
+    max-width: 1360px;
+  }
+}
+
+/********* Home page *******/
+.home-grid {
+  height: 0;
+  padding-bottom: 31.4%;
+  overflow: hidden;
+  margin-bottom: 2%;
+  position: relative;
+  background: #474749;
+}
+.home-products > a:nth-of-type(2n+1) {
+  clear: left;
+}
+
+.home-grid-text {
+  position: absolute;
+  left: calc(50% - 80px);
+  top: 40%;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 300 !important;
+  font-family: 'Merriweather', serif !important;
+  font-size: 19px;
+  display: none;
+}
+.home-grid-text h2 {
+  font-weight: 300 !important;
+  font-family: 'Merriweather', serif !important;
+
+}
+.home-grid-text p {
+  margin-bottom: 0;
+}
+
+.home-grid a:hover img {
+  opacity: 0.2;
+}
+.home-grid a:hover .home-grid-text {
+  display: block;
+}
+.home-grid.grid12-4 {
+  width: 33.3%;
+  margin: 0;
+}
+.home-grid .grid12-6 {
+  width: 50%;
+  margin: 0;
+}
+/* shop now */
+.home-grid .shop-now {
+  padding-bottom: 999px;
+  background: #474749;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  padding-top: 20%;
+}
+.home-grid .shop-now .button {
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  border: 1px solid #fff;
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+/* overview */
+.home-grid .home-overview {
+  padding: 15% 20px 999px;
+  background: #fff;
+  text-align: center;
+  font-size: 18px;
+}
+.home-grid .home-overview a {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #74b867;
+  font-family:'Merriweather Sans';
+  text-align: center;
+  color: #74b867;
+  margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+  .home-grid.grid12-4 {
+    width: 80%;
+    padding-bottom: 79.5%;
+    margin: 0 10%;
+  }
+}
+@media (max-width: 479px) {
+  .home-grid.grid12-4 {
+    width: 100%;
+    padding-bottom: 99.5%;
+    margin: 0;
+  }
+}
+
+/************* Footer ***********/
+.footer-link-buttons a {
+  display: inline-block;
+  padding: 10px 0;
+  width: 130px;
+  border: 1px solid #74b867;
+  font-family:'Merriweather Sans';
+  text-align: center;
+  margin-bottom: 10px;
+}
+.footer .grid-full {
+  width: 100%;
+}
+.footer .section-space {
+  padding: 0;
+}
+#subscribe-form label {
+  display: none;
+}
+.footer .contact p {
+  margin-bottom: 0;
+}
+#subscribe-form .button span span {
+  font-size: 14px;
+  color: #fff;
+  background: #333;
+  padding: 0 20px;
+  height: 35px;
+  line-height: 35px;
+  font-family: 'Merriweather Sans', sans-serif;
+  text-transform: uppercase;
+}
+#subscribe-form .input-text {
+  width: 180px;
+  height: 33px;
+  line-height: 33px;
+}
+.footer-newsletter {
+  margin-top: 20px;
+}
+.footer-bottom .float-left,
+.footer-bottom .footer-copyright {
+  float: none;
+  text-align: center;
+}
+.footer-bottom-container {
+  padding: 0;
+  border: none;
+}
+.footer-primary-container {
+  border-top: 1px solid #CCCECE;
+}
+.footer iframe {
+  border: 1px solid #6D6E71;
+}
+.footer-primary-container {
+  padding-bottom: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .footer .grid12-4 {
+    margin-bottom: 20px;
+  }
 }

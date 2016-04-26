@@ -1,35 +1,56 @@
-<div class="home-grids">
+<div class="home-grids clearfix">
     <!-- top-left grid -->
     <div class="home-grid grid12-4">
-
+        <img src="{{media url="wysiwyg/homepage/cheese.png"}}" alt="" />
     </div>
-    <!-- top-mid grid -->
-    <div class="home-grid grid12-4">
 
+    <!-- top-mid grid -->
+    <!-- // products-1 //-->
+    <div class="home-grid grid12-4">
+        {{widget type="cms/widget_block" template="cms/widget/static_block/default.phtml" block_id="131"}}
     </div>
 
     <!-- top-right grid -->
-    <!-- shop now -->
+    <!-- //  shop now // -->
     <div class="home-grid grid12-4">
-
+        <div class="shop-now">
+            <h2>Serving Fresh Today </h2>
+            <p>Grass-fed Burger Patties</p>
+            <a class="button" href="{{store url=''}}"> Shop Now </a>
+        </div>
     </div>
+
     <!-- mid-left grid -->
-    <div class="home-grid grid12-4"></div>
+    <div class="home-grid grid12-4">
+        <img src="{{media url="wysiwyg/homepage/spoons.png"}}" alt="" />
+    </div>
+
     <!-- mid-mid grid -->
-    <div class="home-grid grid12-4"></div>
+    <div class="home-grid grid12-4">
+        <img src="{{media url="wysiwyg/homepage/meat.png"}}" alt="" />
+    </div>
+
     <!-- mid-right grid -->
-    <div class="home-grid grid12-4"></div>
+    <div class="home-grid grid12-4">
+        <img src="{{media url="wysiwyg/homepage/bowl.png"}}" alt="" />
+    </div>
 
     <!-- bottom-left grid -->
-    <div class="home-grid grid12-4"></div>
+    <!-- // products-2 // -->
+    <div class="home-grid grid12-4">
+        {{widget type="cms/widget_block" template="cms/widget/static_block/default.phtml" block_id="132"}}
+    </div>
 
     <!-- bottom-mid grid -->
-    <!-- Brooklyn Kitchen overview -->
-
+    <!-- // Brooklyn Kitchen overview//  -->
     <div class="home-grid grid12-4">
+
         <p>The Brooklyn Kitchen is your favorite cooking store. We offer ingredient-driven groceries, quality tools and equipment, and technique-based recreational cooking classes. Family owned and operated since 2006!</p>
         <a href="{{store url='visit/our-store-our-story'}}">More about Brooklyn Kitchen ›</a>
     </div>
+
     <!-- bottom-right grid -->
-    <div class="home-grid grid12-4"></div>
+    <div class="home-grid grid12-4">
+        <img src="{{media url="wysiwyg/homepage/eatrealfood.png"}}" alt="" />
+    </div>
 </div>
