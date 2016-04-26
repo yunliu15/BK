@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="3e737882-f55e-4767-a113-210c54b37545" name="BK" url="http://www.thebrooklynkitchen.com">
+        <fileTransfer host="www.thebrooklynkitchen.com" port="22" privateKey="$USER_HOME$/.ssh/support.id_rsa" rootFolder="/home/dev" accessType="SFTP" username="dev" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
