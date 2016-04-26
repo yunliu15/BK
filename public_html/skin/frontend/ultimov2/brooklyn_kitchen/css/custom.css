@@ -569,6 +569,12 @@ a.link-registry:hover { background-color:#fff; /*opacity:1; filter:alpha(opacity
 .show-separators .links > li > a {
   background-image: none;
 }
+#nav > li > a {
+  font-family: "Merriweather" !important;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
 @media only screen and (min-width: 1280px) {
   .container {
     max-width: 1360px;
