@@ -82,7 +82,7 @@ h5, h6 {
 #search_mini_form .form-search .input-text {
   background: transparent;
   border: none;
-  border-bottom: 1px dotted #fff;
+  border-bottom: 1px dotted #333;
   width: 80%;
   transition: width 0.5s;
   -webkit-transition: width 0.5s;
@@ -580,7 +580,7 @@ h4, h5, h6, .user-menu {
 
 /********* header ***********/
 .header .logo {
-  max-width: 200px;
+  max-width: 250px;
 }
 #mini-cart {
  font-family: "Merriweather", serif;
@@ -590,18 +590,21 @@ h4, h5, h6, .user-menu {
   background: #fff;
 }
 #mini-cart .dropdown-toggle .icon-cart {
-  background: url(../images/img/cart-black.png) no-repeat center 8px;
+  width: 20px;
+  height: 20px;
+  background: url(../images/img/shopping-basket.png) no-repeat center;
+  background-size: 100%;
+  transform: translateY(5px);
 }
+
 .header .form-search .button {
-  background-image: url(../images/img/search.png);
+  background-image: url(../images/img/search-magnifying-glass.png);
   background-size: 100%;
   background-position: center;
   width: 20px;
   height: 20px;
 }
-#search_mini_form .form-search .input-text {
-  border-bottom: none;
-}
+
 .header .caret {
   border-top-color: #333;
 }
@@ -610,7 +613,8 @@ h4, h5, h6, .user-menu {
 }
 
 #nav > li.parent > a,
-#nav > li.parent:hover > a {
+#nav > li.parent:hover > a,
+#nav > li.parent.active > a {
   background-image: none;
 }
 .show-separators .links > li > a {
@@ -633,7 +637,7 @@ h4, h5, h6, .user-menu {
 }
 @media only screen and (min-width: 1280px) {
   .container {
-    max-width: 1360px;
+    max-width: 1150px;
   }
 }
 
@@ -782,18 +786,31 @@ body.cms-index-index .main {
   }
 
   /* make logo align with nav */
-  .nav.container {
-    border-top: 2px solid;
+  .nav-container {
+    border-top: 2px solid #333;
   }
   .nav.container #nav {
-    width: 58%;
+    width: calc(100% - 280px);
     margin: auto;
     display:block;
-    float: none;
+    float: right;
   }
+  #nav > li:last-of-type {
+    float: right;
+  }
+
   .header .logo {
     position: relative;
-    top: 23px;
+    top: 27px;
+  }
+  #mobnav {
+    display: none !important;
+  }
+  #search_mini_form .form-search .input-text {
+    border-bottom: none;
+  }
+  #search_mini_form {
+    margin-top: 20px;
   }
 }
 
@@ -856,6 +873,8 @@ body.cms-index-index .main {
 @media (max-width: 479px) {
   .home-grid.grid12-4 {
     width: 100%;
+    margin-left: 0;
+    margin-right: 0;
     /*padding-bottom: 99.5%;*/
   }
   .home-overview p,
