@@ -196,6 +196,9 @@
           
       <!-- Remove "checkout" and "cart" links -->
       <remove name="checkout_cart_link" />
+
+        <!-- remove "wishlist" link -->
+        <remove name="wishlist_link" />
       
       <!-- Add compare block -->
       <block type="catalog/product_compare_sidebar" name="compare.mini" as="compareMini" template="catalog/product/compare/mini.phtml"/>
@@ -287,12 +290,33 @@
   <customer_logged_out>
     
     <reference name="top.links">
-            <action method="addLink" translate="label title"><label>Sign Up</label><url>customer/account/create</url><title>Sign Up</title><prepare>true</prepare><urlParams/><position>101</position><liParams>id="link-sign-up"</liParams></action>
+            <!--<action method="addLink" translate="label title"><label>Sign Up</label><url>customer/account/create</url><title>Sign Up</title><prepare>true</prepare><urlParams/><position>101</position><liParams>id="link-sign-up"</liParams></action>
+-->
+        <action method="removeLinkByUrl"><url helper="customer/getAccountUrl"/></action>
         </reference>
-    
   </customer_logged_out>
-  
+    <customer_logged_in>
+        <reference name="top.links">
+            <action method="removeLinkByUrl"><url helper="customer/getLogoutUrl"/></action>
 
+        </reference>
+    </customer_logged_in>
+
+    <customer_account>
+
+        <reference name="left">
+
+            <reference name="customer_account_navigation">
+                <action method="addLink" translate="label" module="customer">
+                    <name>logout</name>
+                    <path>customer/account/logout/</path>
+                    <label>Log Out</label>
+                </action>
+            </reference>
+
+        </reference>
+
+    </customer_account>
   <!-- PRODUCT VIEW %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
   <catalog_product_view>
   
