@@ -12,7 +12,7 @@ body {
 }
 h1, h2, h3, h4, h5, .section-title, .products-list .product-name, .products-grid .product-name, h3.product-name, .feature .heading, .accordion .heading, #mobnav-trigger, #nav > li > a, #nav.wide ul.level0 > li > a, .vertnav-top li a, .block .block-title, #opc-login h3, .box-account .box-head h2, .order-items h2.table-caption, .order-items h2.sub-title, .order-items .order-comments h2, .product-view .box-reviews dt .heading, .footer .heading, .slide .caption h2, .slide .caption h3, .main-font, .footer-bottom-container, .user-menu, .tweet-posted, .instagram-follow {
   font-family: 'Merriweather Sans', sans-serif !important;
-  font-weight: 700;
+  font-weight: 400;
 }
 h4, h5, h6, .user-menu {
   font-weight: 300;
@@ -465,8 +465,244 @@ a.link-registry {
 a.link-registry:hover { background-color:#fff; /*opacity:1; filter:alpha(opacity=100);*/ }
 
 
-/* Add-to links as text links with icons
+/* Gift Registry
 -------------------------------------------------------------- */
+
+.amgiftreg-event-edit .form-list label {
+  color:#000;
+  font-weight: normal;
+  /*margin: 15px 0 10px 0;*/
+}
+
+.amgiftreg-event-edit .fieldset {
+  border: 1px solid #e5e5e5;
+  margin-top: 20px;
+  padding: 20px 30px;
+}
+
+.amgiftreg-event-edit input#submit {
+  padding: 10px 20px;
+  background: #fff;
+  border: 1px solid #74b867;
+  font-family: 'Merriweather Sans';
+  color: #71b56a;
+}
+
+.amgiftreg-event-edit input#submit:hover {
+  color: #608F57;
+  border-color: #608F57;
+  cursor: pointer;
+}
+
+#shipping_address_text {
+  border: 1px solid #e3e7e8;
+  padding: 10px;
+  margin-top: 20px;
+  display: block;
+  font-weight: bold;
+}
+
+.block-account li a, .block-account li.current, .block-account .block-title {
+  background:none;
+  padding-left:0 !important;
+}
+
+.block-account li.current strong {
+  font-weight: bold;
+}
+
+.block-account .block-content {padding-left:0;}
+
+
+.form-list label {color:#000; font-weight:normal;}
+
+h1 {font-size: 2em;}
+
+#login-form {margin-top:40px; display:block;}
+
+.account-login h2, #opc-login h3 {text-transform: capitalize;}
+
+button.button span span {
+  padding: 0px 20px;
+  height: 40px;
+  line-height: 40px;
+}
+
+#my-lists-table tr {border-bottom:1px solid #e5e5e5;}
+
+.green-text {
+  float: left;
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  color:#74b867;
+  font-style: italic;
+}
+
+/* Create a Gift Registry
+ -------------------------------------------------------------- */
+
+@media (min-width: 767px) {
+  .grid12-8.gr-instructions {width: 66%;}
+  .grid12-4.gr-cta {width:32%;}
+  
+}
+
+.grid12-8.gr-instructions {
+    border: 1px solid #d3dbdd;
+    padding: 25px;
+    margin-right: 2%;
+    margin-left: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  }
+
+
+
+.gift-reg-bg {
+  display: block;
+  min-height: 200px;
+  position: relative;
+  background: url(../images/gift-registry-search-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width:100%;
+}
+
+.gift-reg-bg label {color:#fff; font-size:16px; margin-bottom:5px; display:block;}
+
+.gift-reg-bg #event_title {
+  display: block;
+  min-height: 40px;
+  width: 62%;
+  max-width: 640px;
+  border:none;
+  padding-left: 5px;
+  font-family: 'Merriweather', serif;
+  float: left;
+  margin-right: 15px;
+}
+
+.gift-reg-bg button.button.search-button span {
+  background-color:#74b866 !important;
+  color:#fff;
+  font-size:14px;
+  font-weight:700;
+  text-transform: uppercase;
+  font-family: 'Merriweather Sans';
+  width: 100%;
+}
+
+.gift-reg-bg .pager {margin:0 !important;}
+
+.gift-reg-bg button.button.search-button:hover span {
+  background-color: #608F57 !important;
+}
+
+#my-lists-table td {border-right:none;}
+
+
+.input-box.gift-reg-wrap {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 30px;
+  width:100%;
+}
+
+.grid-container.gr-contain {
+  display: inline-block;
+  width: 100%;
+  margin: 10px 0px 15px 0;
+}
+
+
+.grid12-4.gr-cta {
+  background-color:#e3e7e8;
+  padding:35px 25px;
+  text-align: center;
+  margin:0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.grid12-4.gr-cta h3 {
+  font-size:20px;
+  font-family: 'Merriweather', serif !important;
+  margin-bottom: 5px;
+}
+
+.gr-button {
+  padding: 10px 25px;
+  background-color: #333;
+  color: #fff;
+  margin-top: 10px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: 'Merriweather Sans';
+}
+
+.gr-button:hover {
+  color:#fff;
+  background-color:#424242;
+}
+
+.grid12-8.gr-instructions ol {
+  list-style: inherit;
+  padding-left: 15px;
+}
+
+.grid12-8.gr-instructions li {margin-bottom:4px;}
+
+
+  /* Misc Styles
+   -------------------------------------------------------------- */
+
+.accordion-style1 .opener, .accordion-style1 .opener:hover, .accordion-style1 li a:hover {background-color:#fff;}
+
+.page-title h1, .page-title h2 {margin-bottom:9px;}
+
+.gen-tabs-style1 .tabs a, .pager .pages li a, .my-wishlist .data-table tr.even, .data-table tr.even {background: #fff;}
+
+.pager .pages li.current {background: #fff; font-weight:bold;}
+
+
+.pager .amount, .pager .limiter, .pager .pages, .sorter .amount, .sorter .limiter, .sorter .view-mode, .sorter .sort-by {padding:0;}
+
+.cart-table .product-name, .opc .step-title .number {font-size:14px;}
+
+.cart .totals {background:#fff; border:1px solid #e5e5e5;}
+
+.opc .step-title .number {padding:0px 10px;}
+
+.opc .active .step-title {background:#fff; border:1px solid #000;}
+
+.opc .step-title, .opc .allow .step-title {background:#fff; border:1px solid #999;}
+.opc .step-title h2 {font-size:14px;}
+
+.add-to-cart .qty {margin-right:10px;}
+.product-shop .add-to-cart .input-text {margin-top:9px;}
+.add-to-cart label {line-height: 46px;}
+
+.grid12-6.seo-text {
+  text-align: center;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.center-grid-home {
+  display:inline-flex;
+}
+
+.produce-page, .produce-text {margin-bottom:20px;}
+
+
+
+  /* Add-to links as text links with icons
+  -------------------------------------------------------------- */
 .addto-textlink a.link-registry {
 	display:block;
 	padding:2px 0 2px 19px;
@@ -513,7 +749,7 @@ a.link-registry:hover { background-color:#fff; /*opacity:1; filter:alpha(opacity
   line-height: 20px;
 }
 .product-view .btn-cart span span {
-  padding: 5px 10px;
+  padding: 5px 35px;
 }
 
   
@@ -671,8 +907,11 @@ body.cms-index-index .main {
   text-transform: uppercase;
   font-weight: 300 !important;
   font-family: 'Merriweather', serif !important;
-  font-size: 19px;
+  font-size: 16px;
 }
+
+.produce-page .home-grid-text {top:25%;}
+
 .home-product .home-grid-text {
   top: 40%;
 }
@@ -774,6 +1013,9 @@ body.cms-index-index .main {
     display: none;
     color: #fff;
   }
+
+
+
   .home-grid a:not(.button) {
     background-color: #222;
   }
@@ -838,6 +1080,16 @@ body.cms-index-index .main {
   }
 }
 
+
+@media (max-width: 957px) {
+
+  .grid12-4.gr-cta, .grid12-8.gr-instructions {width:100%;}
+
+  .grid12-4.gr-cta {margin-top:20px;}
+
+}
+/** Gift Registry **/
+
 @media (max-width: 767px) {
   .home-grid.grid12-4 {
     width: 80%;
@@ -853,6 +1105,18 @@ body.cms-index-index .main {
   .home-grid-text {
     font-size: 16px;
   }
+
+  /** Gift Registry **/
+
+  .gift-reg-bg #event_title {width:85%; float:none;}
+
+  .gift-reg-bg button.button.search-button {padding-left:0 !important; margin-top:10px;}
+
+  .input-box.gift-reg-wrap {
+    padding: 0 20px;
+    width: 80%;}
+
+
 }
 @media (max-width: 639px) {
   .home-overview a.button {
@@ -958,5 +1222,35 @@ body.cms-index-index .main {
   }
   .footer-link-buttons a {
     font-size: 13px;
+  }
+}
+
+/* fix main nav */
+#nav > li.parent > a {
+  padding-right: 15px;
+}
+
+@media (min-width: 960px) and (max-width: 1280px) {
+  #nav > li.parent > a {
+    padding-right: 8px;
+  }
+  #nav > li > a {
+
+    padding: 0 8px;
+  }
+  .nav.container #nav {
+    width: calc(100% - 250px);
+  }
+}
+@media (min-width: 768px) and (max-width: 959px) {
+  #nav > li.parent > a {
+    padding-right: 8px;
+  }
+  #nav > li > a {
+    padding: 0 8px;
+  }
+  .nav.container #nav {
+    width: 100%;
+    margin-top: 30px;
   }
 }
